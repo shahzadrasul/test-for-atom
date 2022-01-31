@@ -1,0 +1,5 @@
+
+node {
+    stage("speak") {
+        slackSend channel: 'general', message: "Hello ${env.BUILD_NUMBER} build url ${env.BUILD_URL}"
+    }
