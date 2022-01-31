@@ -1,0 +1,4 @@
+node {
+    stage("speak") {
+        slackSend channel: 'general', message: "Helllo ${env.BUILD_NUMBER}", tokenCredentialId: 'homefone'}
+    }
